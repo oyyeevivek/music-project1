@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jaro:opsz@6..72&family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <style>
+        .wrapper { width: 80%; max-width: 1200px; margin: 0 auto; padding: 20px; } .header, .main, .footer { margin-bottom: 20px;}
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(189, 219, 219);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-family: "Jaro", sans-serif;
+            
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-family: "Oswald", sans-serif;
+        }
+        nav a:hover {
+            background-color: #2aab30;
+        }
+        .featured {
+            background: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .featured h1 {
+            font-size: 3em;
+            font-family: "Yuji Mai", serif;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+
+        }
+        .album {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(253, 250, 252);
+            box-shadow: 0 0 10px white;
+            transition: transform 0.2s;
+            
+        }
+        .album img {
+            width: 200px;
+            height: auto;
+        }
+        .album:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .album p{
+            font-family: "Bungee Spice", sans-serif;
+        }
+        .parent{
+            display: flex;
+        }
+       
+         .logo img {
+            height: 40px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .search{
+            display: flex;
+            text-align: end;
+            align-items: center;
+            flex: 2px;
+        }
+        .search input{
+padding: 30px;
+          border: 1px solid white;
+          border-radius: 4px;
+          background-color: rgb(225, 221, 221);
+          flex: 2px;
+          text-align: end;
+          height: 1px;
+          width: 200px;
+         
+        }
+        .search button {
+      padding: 8px 12px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #444;
+      color: #eee;
+      cursor: pointer;}
+      .music-section {
+  padding-top: 50px;
+  background: var(purple);
+}
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 8, 8);
+  font-family: "Jaro", sans-serif;
+}
+
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary-btn {
+  background-color: red;
+  color: rgb(24, 21, 21);
+}
+.primary-btn:hover{
+    transition: 1s;
+   transform: rotate(1.4);
+   background: #2aab30;
+}
+.song{
+    text-align: end;
+}
+.back{
+    background-image: url(https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; } 
+.footer { background-color: #333; color: #fff; text-align: center; padding: 20px 0; position: fixed; bottom: 0; width: 100%; } 
+.footer a { color: #fff; text-decoration: none; margin: 0 10px; } 
+.footer a:hover { text-decoration: underline; }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="parent">
+        <div class="logo">
+            <img src="https://d4l6e04z43qjx.cloudfront.net/img/music/music-logo-maker-4.png" alt="">
+        </div>
+        <div><h1>MUSIC</h1></div>
+        <div class="search">
+            <input type="text" placeholder="Search songs....">
+            <button>Search</button>
+        </div>
+    </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Artists</a>
+        <a href="#">Albums</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="featured">
+        <h1>90'S Ever Green</h1>
+    </div>
+    <div class="back">
+   <div class="content">
+        <h2>Latest Albums</h2>
+        <a href=""><div class="album">
+            <img src="https://c.saavncdn.com/479/The-Arijit-Singh-Collection-Hindi-2023-20230526154904-500x500.jpg" alt="Album 1">
+            <p>The ARIJIT SINGH COOLECTION</p>
+            <audio controls loop>
+                <source src="Meri Aashiqui Ab Tum Hi Ho Full Song (Lyrics) - Arijit Singh _ Lyrics Tube.mp3" type="audio/mpeg">
+              
+              </audio>
+    
+        </div></a>
+       <a href=""><div class="album">
+            <img src="https://cdn-images.dzcdn.net/images/cover/e7d5016238e6df6637c6f52d72870c8e/0x1900-000000-80-0-0.jpg" alt="Album 2">
+            <p>DILJIT DOSANJH TOP HITS
+            </p>
+            <audio controls loop>
+                <source src="Diljit Dosanjh - G.O.A.T. (Official Music Video).mp3" type="audio/mpeg">
+              
+              </audio>
+        </div></a>
+       <a href=""><div class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b2734fb56caeb0935bd108b2c3dc" alt="Album 3">
+            <p>MELODY QUEEN SHREYA GHOSAL</p>
+            <audio controls loop>
+                <source src="Zaalima - DYSTINCT _ Shreya Ghoshal _ Mouni Roy _ Rajat Nagpal _ Rana Sotal _ Anshul Garg.mp3" type="audio/mpeg">
+             
+              </audio>
+        </div></a>
+       <a href=""><div class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b27365cc59f0b2f52d80f6f59bea" alt="Album 4">
+            <p>KING KUMAR SANU</p>
+            <audio controls loop>
+                <source src="इस तरह आशिकी का - इम्तिहांन _ सैफ अली खान और रवीना _ कुमार शानू _ अनु मलिक.mp3" type="audio/mpeg">
+              
+              </audio>
+        </div></a>
+            <a href=""><div class="album">
+                <img src="https://i.scdn.co/image/ab67616d0000b273a1967aece583f9b3bbe6da21" alt="Album 4">
+                <p>UDIT NARAYAN</p>
+                <audio controls loop>
+                    <source src="Main Yahaan Hoon - Full Song _ Veer-Zaara _  Shah Rukh Khan _ Preity Zinta _ Udit Narayan.mp3" type="audio/mpeg">
+                 
+                  </audio>
+            </div></a>
+
+        <!-- Add more albums as needed -->
+    </div>
+</div>
+</div>
+    <hr>
+    <section class="music-section" id="music">
+        <div class="container">
+          <h2>
+            <span><i class="fa fa-music"></i></span>
+            Music
+          </h2>
+          <h4>
+            Stream over 45 million songs, ad-free. Or download albums and tracks
+            to listen to offline. All the music in your personal myTunes library
+            — no matter where it came from — lives right alongside the Orange
+            Music catalog. Start your free three-month trial with no commitment,
+            and cancel anytime.
+          </h4>
+          <button class="primary-btn">Start Your Trail Now</button>
+
+          <p>
+            Orange Music is available in myTunes, and for iOS and Android
+            devices.
+          </p>
+          <div class="ipad-iphone-img">
+            <img src="https://help.apple.com/assets/65F88A0646BAA6AB5E0E9BC2/65F88A07EF8EFC7FBB056B5C/en_US/7e635939a3721354d6f1df5274be61ee.png" alt="iphone ipad" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">  <p> <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a> </p> </footer>
+    
+</body>
+</html>
+      
